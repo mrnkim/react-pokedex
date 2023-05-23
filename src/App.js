@@ -2,11 +2,15 @@ import React from "react";
 import "./App.css";
 import Pokedex from "./Pokedex.js";
 
-/** */
+/** Renders a single Pokedex component based off info in array "pokemons".
+ * Pokedex component returns Pokecard components for each pokemon in "pokemons"
+*/
+
 function App() {
   return (
     <div className="App">
       <Pokedex
+      // can pass below value for pokemons prop as default value in actual Pokedex component
         pokemons={[
           { id: 4, name: "Charmander", type: "fire", base_experience: 62 },
           { id: 7, name: "Squirtle", type: "water", base_experience: 63 },

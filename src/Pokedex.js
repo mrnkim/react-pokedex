@@ -1,5 +1,10 @@
 import Pokecard from "./Pokecard";
 
+/** Receives array "pokemons" as a property. Maps through "pokemons", extracts
+ * the name, id, type, and base_experience from each element, and returns
+ * a Pokecard component for each pokemon based on the extracted values.
+ */
+
 function Pokedex({ pokemons }) {
   return (
     <div>
